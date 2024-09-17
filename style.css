@@ -103,6 +103,17 @@ html {
     transition: width 1s ease-in-out; 
 }
 
+.tech-bars .progress-line span::after {
+    content: attr(data-percentage); 
+    position: absolute;
+    top: -30px; 
+    right: 0; 
+    font-size: 12px;
+    color: #fff;
+    transform: translateX(50%); 
+}
+
+
 
 .progress-line.html span {
     width: 90%; 
