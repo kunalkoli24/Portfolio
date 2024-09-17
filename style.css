@@ -59,39 +59,14 @@ html {
 }
 
 
-
-.tech-bars .bar:first-child {    
-    margin-top: 0;
-}
-
-.tech-bars .bar:last-child {    
-    margin-bottom: 0;
-}
-
-.tech-bars .info {    
-    margin-bottom: 5px;
-}
-
-.tech-bars .info span {    
-    font-size: 17px;
-    font-weight: 500;
-     
-      
-    opacity: 1; 
-    display: inline-block; 
-    
-}
-
-
-
-.tech-bars .progress-line {    
+/* technical skill  */
+.tech-bars .progress-line {
     position: relative;
     border-radius: 10px;
-    width: 35%;
+    width: 95%;  
     height: 5px;
-    background-color: #000; 
-    transform: scaleX(1);
-    margin-top: 10px; 
+    background-color: #000;
+    margin-top: 10px;
 }
 
 .tech-bars .progress-line span {
@@ -104,44 +79,55 @@ html {
 }
 
 .tech-bars .progress-line span::after {
-    content: attr(data-percentage); 
+    content: attr(data-percentage);
     position: absolute;
-    top: -30px; 
-    right: 0; 
+    top: -33px; 
+    right: 0;
     font-size: 12px;
     color: #fff;
-    transform: translateX(50%); 
+    transform: translateX(50%);
 }
 
 
+/* proff skill  */
 
-.progress-line.html span {
-    width: 90%; 
+.prof-bars .prof-progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 90%;  
+    height: 5px;
+    background-color: #000;  
+    margin-top: 10px;
 }
 
-.progress-line.css span {
-    width: 80%; 
+.prof-bars .prof-progress-line span {
+    height: 100%;
+    background-color: #0ef;  
+    position: absolute;
+    border-radius: 10px;
+    width: 0%;  
+    transition: width 1s ease-in-out;  
 }
 
-.progress-line.javascript span {
-    width: 70%;
+.prof-bars .prof-progress-line span::after {
+    content: attr(data-percentage);  
+    position: absolute;
+    top: -33px;
+    right: -12px;
+    font-size: 12px;
+    color: #fff;
+    white-space: nowrap;
 }
 
-.progress-line.tailwind-css span {
-    width: 85%;
+.prof-bars .info {
+    margin-bottom: 5px;
 }
 
-.progress-line.python span {
-    width: 70%;
+.prof-bars .info span {
+    font-size: 17px;
+    font-weight: 500;
+    display: inline-block;
 }
-
-.progress-line.figma span {
-    width: 75%;
-}
-
-
-
-
 
 
 

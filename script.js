@@ -21,17 +21,37 @@ function Animation(text){
 Animation(typingtext[0]);
 
 // Active navbar links
-
-
 const navLinks = document.querySelectorAll('.nav-link');
 
-// Loop for each link
 navLinks.forEach(link => {
     link.addEventListener('click', function() {
-        // Remove 'active' class from all links
+// Remove 'active' class from all links
         navLinks.forEach(item => item.classList.remove('text-[#0ef]' ));
-
-        // Add 'active' class to the clicked link
         this.classList.add('text-[#0ef]'); 
     });
 });
+
+// technical skill
+function updateTechnicalSkills() {
+    const techProgressBars = document.querySelectorAll('.tech-bars .progress-line span');
+
+    techProgressBars.forEach(bar => {
+        const percentage = bar.getAttribute('data-percentage'); 
+        bar.style.width = percentage; 
+    });
+}
+
+document.addEventListener('DOMContentLoaded', updateTechnicalSkills);
+
+
+// proff skill 
+
+function updateProgressBars() {
+    const progressBars = document.querySelectorAll('.prof-progress-line span');
+
+    progressBars.forEach(bar => {
+        const percentage = bar.getAttribute('data-percentage');  
+        bar.style.width = percentage;  
+    });
+}
+document.addEventListener('DOMContentLoaded', updateProgressBars);

@@ -20,7 +20,7 @@
             <ul class="navbar  flex items-center space-x-20 font-semibold ml-[340px] text-2xl font-mono  ">
                 <li class="nav-link transform transition-transform duration-300 hover:scale-110 hover:text-[#0ef]"><a href="#home" style="--i:1;">Home</a></li>
                 <li class="nav-link transform transition-transform duration-300 hover:scale-110 hover:text-[#0ef]"><a href="#about-me" style="--i:2;">About Me</a></li>
-                <li class="nav-link transform transition-transform duration-300 hover:scale-110 hover:text-[#0ef]"><a href="#" style="--i:3;">My Skills</a></li>
+                <li class="nav-link transform transition-transform duration-300 hover:scale-110 hover:text-[#0ef]"><a href="#skills" style="--i:3;">My Skills</a></li>
                 <li class="nav-link transform transition-transform duration-300 hover:scale-110 hover:text-[#0ef]"><a href="#" style="--i:4;">Projects</a></li>
                 <li class="nav-link transform transition-transform duration-300 hover:scale-110 hover:text-[#0ef]"><a href="#" style="--i:5;">Contact</a></li>
             </ul>
@@ -106,25 +106,26 @@
 
 <!-- My Skills section  -->
 
-<section>
-    <p class="text-center font-bold text-5xl mt-36">My Skills</p>
+<section id="skills">
+    <p class="text-center font-bold text-5xl mt-36 pt-[5rem]">My Skills</p>
 
-    <div>
-        <div>
-            <p class="ml-[19rem] mt-20 font-bold text-3xl">Technical Skills</p>
-            <div class="ml-48 mt-14 text-lg space-y-4">
-    
+    <div class="flex justify-center"> 
+
+        <!-- Technical Skills -->
+        <div class="w-[50%]"> 
+            <p class="ml-[22rem] mt-20 font-bold text-3xl">Technical Skills</p>
+            <div class="ml-44 p-9 mt-12 text-lg space-y-4 border-2 border-[#0ef] rounded-3xl shadow-[#0ef] shadow-lg">
+
                 <div class="tech-bars">
                     <div class="bar"><i class='bx bxl-html5'></i></div>
                     <div class="info">
                         <span>HTML</span>
                     </div>
                     <div class="progress-line html">
-                        <span data-percentage="90%"></span> 
+                        <span data-percentage="95%"></span>
                     </div>
                 </div>
-                
-    
+
                 <div class="tech-bars">
                     <div class="bar"><i class='bx bxl-css3'></i></div>
                     <div class="info">
@@ -134,7 +135,7 @@
                         <span data-percentage="80%"></span>
                     </div>
                 </div>
-    
+
                 <div class="tech-bars">
                     <div class="bar"><i class='bx bxl-javascript'></i></div>
                     <div class="info">
@@ -144,17 +145,17 @@
                         <span data-percentage="70%"></span>
                     </div>
                 </div>
-    
+
                 <div class="tech-bars">
                     <div class="bar"><i class='bx bxl-tailwind-css'></i></div>
                     <div class="info">
                         <span>TAILWINDCSS</span>
                     </div>
                     <div class="progress-line tailwind-css">
-                        <span data-percentage="85%"></span>
+                        <span data-percentage="88%"></span>
                     </div>
                 </div>
-    
+
                 <div class="tech-bars">
                     <div class="bar"><i class='bx bxl-python'></i></div>
                     <div class="info">
@@ -164,21 +165,67 @@
                         <span data-percentage="70%"></span>
                     </div>
                 </div>
-    
+
                 <div class="tech-bars">
                     <div class="bar"><i class='bx bxl-figma'></i></div>
                     <div class="info">
                         <span>FIGMA</span>
                     </div>
                     <div class="progress-line figma">
-                        <span data-percentage="75%"></span>
+                        <span data-percentage="80%"></span>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Professional Skills -->
+        <div class="w-[50%]"> <!-- Set width to half -->
+            <p class="ml-[19rem] mt-20 font-bold text-3xl">Professional Skills</p>
+            <div class="ml-28 mr-8 p-10 mt-12 text-lg space-y-4 border-2 border-[#0ef] rounded-3xl shadow-[#0ef] shadow-lg">
+
+                <div class="prof-bars">
+                    <div class="bar"><i class='bx bx-briefcase'></i></div>
+                    <div class="info">
+                        <span>Communication</span>
+                    </div>
+                    <div class="prof-progress-line communication">
+                        <span data-percentage="90%"></span>
+                    </div>
+                </div>
+
+                <div class="prof-bars">
+                    <div class="bar"><i class='bx bx-group'></i></div>
+                    <div class="info">
+                        <span>Teamwork</span>
+                    </div>
+                    <div class="prof-progress-line teamwork">
+                        <span data-percentage="95%"></span>
+                    </div>
+                </div>
+
+                <div class="prof-bars">
+                    <div class="bar"><i class='bx bx-brain'></i></div>
+                    <div class="info">
+                        <span>Creativity</span>
+                    </div>
+                    <div class="prof-progress-line time-management">
+                        <span data-percentage="80%"></span>
+                    </div>
+                </div>
+
+                <div class="prof-bars">
+                    <div class="bar"><i class='bx bx-bulb'></i></div>
+                    <div class="info">
+                        <span>Problem Solving</span>
+                    </div>
+                    <div class="prof-progress-line problem-solving">
+                        <span data-percentage="85%"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
     </div>
-    
-</section>
 
 
 <script src="script.js"></script>
