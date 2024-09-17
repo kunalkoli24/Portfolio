@@ -60,6 +60,73 @@ html {
 
 
 
+.tech-bars .bar:first-child {    
+    margin-top: 0;
+}
+
+.tech-bars .bar:last-child {    
+    margin-bottom: 0;
+}
+
+.tech-bars .info {    
+    margin-bottom: 5px;
+}
+
+.tech-bars .info span {    
+    font-size: 17px;
+    font-weight: 500;
+     
+      
+    opacity: 1; 
+    display: inline-block; 
+    
+}
+
+
+
+.tech-bars .progress-line {    
+    position: relative;
+    border-radius: 10px;
+    width: 35%;
+    height: 5px;
+    background-color: #000; 
+    transform: scaleX(1);
+    margin-top: 10px; 
+}
+
+.tech-bars .progress-line span {
+    height: 100%;
+    background-color: #0ef; 
+    position: absolute;
+    border-radius: 10px;
+    width: 0%; 
+    transition: width 1s ease-in-out; 
+}
+
+
+.progress-line.html span {
+    width: 90%; 
+}
+
+.progress-line.css span {
+    width: 80%; 
+}
+
+.progress-line.javascript span {
+    width: 70%;
+}
+
+.progress-line.tailwind-css span {
+    width: 85%;
+}
+
+.progress-line.python span {
+    width: 70%;
+}
+
+.progress-line.figma span {
+    width: 75%;
+}
 
 
 
