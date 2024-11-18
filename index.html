@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="input.css">
     <link rel="stylesheet" href="output.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
     <link rel="shortcut icon" href="cv-fevicon.png" type="image/x-icon">
     <title>Personal-Portfolio-Website</title>
 </head>
@@ -355,26 +358,24 @@
 
     <div class="flex h-[600px]">
 
-        <div class=" w-[50%] h-[800px]">
+        <div class="w-[50%] h-[800px]">
             <p class="ml-[17rem] mt-20 font-bold text-3xl">Fill The Form</p>
-            <div class="ml-12  mr-12 p-10 mt-12 text-lg space-y-4 border-2 border-[#0ef] rounded-3xl shadow-[#0ef] shadow-lg">
-                <form class="contact-form space-y-3">
+            <div class="ml-12 mr-12 p-10 mt-12 text-lg space-y-4 border-2 border-[#0ef] rounded-3xl shadow-[#0ef] shadow-lg">
+                <form id="contact-form" class="contact-form space-y-3">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
-                  
+        
                     <label for="gmail">Gmail:</label>
                     <input type="email" id="gmail" name="gmail" placeholder="Your Gmail" required>
-                  
+        
                     <label for="note">Note:</label>
                     <textarea id="note" name="note" placeholder="Enter your note" required></textarea>
-                  
-                    <button type="submit">Submit</button>
-                  </form>
-                  
         
-
+                    <button type="submit">Submit</button>
+                </form>
             </div>
         </div>
+        
 
         <div class=" w-[50%] h-[500px]">
             <p class="ml-[14rem] mt-20 font-bold text-3xl ">Connect With Me Here</p>

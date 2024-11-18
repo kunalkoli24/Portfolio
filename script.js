@@ -55,3 +55,45 @@ function updateProgressBars() {
     });
 }
 document.addEventListener('DOMContentLoaded', updateProgressBars);
+
+// form operation code
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (typeof emailjs === "undefined") {
+        console.error("EmailJS library is not loaded. Ensure the script is included correctly.");
+        return;
+    }
+
+    console.log("EmailJS loaded successfully:", emailjs);
+    emailjs.init("7U3KxEq4BcMAC8yck");
+
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("gmail").value;
+        const note = document.getElementById("note").value;
+
+        const formData = {
+            from_name: name,
+            from_email: email,
+            note: note,
+        };
+
+        emailjs.send("service_e8e1h86", "template_vbn2qo6", formData)
+            .then(
+                (response) => {
+                    alert("Message sent successfully!");
+                    console.log("SUCCESS!", response.status, response.text);
+                    document.getElementById("contact-form").reset();
+                },
+                (error) => {
+                    alert("Failed to send message. Please try again.");
+                    console.error("FAILED...", error);
+                }
+            )
+            .catch((error) => {
+                console.error("Error in EmailJS send:", error);
+            });
+    });
+});
